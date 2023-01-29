@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      body{
+        background-color: bisque;
+
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>问候语</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function data() {
+        var now = new Date();
+        var hour = now.getHours();
+        if (hour > 5 && hour <= 7) alert("早上好！");
+        else if (hour > 7 && hour <= 11) alert("上午好！祝你好心情！");
+        else if (hour > 11 && hour <= 13) alert("中午好！");
+        else if (hour > 13 && hour <= 17) alert("下午好！");
+        else if (hour > 17 && hour <= 21) alert("晚上好！");
+        else if (hour > 21 && hour <= 23) alert("晚上好！");
+        else alert("凌晨了，该睡觉了！");
+      }
+      data();
+      </script>
+      <div align="center">
+      <script type="text/javascript">
+      var now=new  Date();
+      var day=now.getDay();
+        var week;
+        switch(day){
+          case 1:
+            week="星期一。还有五天，加油！"
+          break;
+          case 2:
+            week="星期二没啥好说的。。。"
+          break;
+          case 3:
+            week="星期三上了一天课累么？"
+          break;
+          case 4:
+            week="星期四加油！"
+          break;
+          case 5:
+            week="星期五，明天就放假了，加油！"
+          break;
+          case 6:
+            week="星期六，今天是放假的第一天，还有一天时间。。。"
+          break;
+          default:
+            week="星期日，明天就要上课了，好好珍惜吧！"
+            break;
+          
+        }
+        document.write("今天是"+week);
+    </script>
+    </div>
+  </body>
+</html>
